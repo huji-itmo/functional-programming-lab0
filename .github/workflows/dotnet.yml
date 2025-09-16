@@ -22,6 +22,15 @@ jobs:
         dotnet-version: 9.0.x
     - name: Restore dependencies
       run: dotnet restore
+
+    - name: Install FSharpLint globally
+      run: dotnet tool install -g dotnet-fsharplint
+    - name: Install Fantomas globally
+      run: dotnet tool install -g fantomas-tool
+    - name: Run FSharpLint
+      run: dotnet fsharplint lint --recursive .
+    - name: Check formatting with Fantomas
+      run: fantomas --check --recurse .
     - name: Build
       run: dotnet build --no-restore
     - name: Test
