@@ -12,6 +12,9 @@
 перейти на F# и этот курс для меня будет полезен не только
 как "попробовать технологию".
 
+FSharpLint - линт
+Fantomas - форматтинг
+
 Я решил выбрать книгу [Stylish F# 6: Crafting Elegant Functional Code for .NET 6](https://www.oreilly.com/library/view/stylish-f-6/9781484272053/html/Cover.xhtml),
 потому что это книга имеет высокую практическую направленность:
 упражнения встроены в примеры. Более менее современный dotnet (6.0).
