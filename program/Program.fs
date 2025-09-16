@@ -1,4 +1,4 @@
-﻿let printGreeting (name: string) = printfn $"Hello {name} from F#!"
+﻿let printGreeting (name: int64) = printfn $"Hello {name} from F#!"
 
 printGreeting "Ana"
 
